@@ -35,7 +35,7 @@
       ).addTo(map);
 
       var universidadMarker = L.marker(
-        [1.6200896019413116, -75.60427751183336],
+        [1.619776, -75.602457],
         {
           title: "Universidad de la Amazonía",
         }
@@ -97,27 +97,14 @@
       var puntod = new L.LatLng(1.619776, -75.602044);
       var puntoe = new L.LatLng(1.619776, -75.602296);
       var puntof = new L.LatLng(1.619776, -75.602457);
-      var puntog = new L.LatLng(1.619921, -75.602714);
-      var puntoh = new L.LatLng(1.619524, -75.602988);
-      var puntoi = new L.LatLng(1.619218, -75.603117);
-      var puntoj = new L.LatLng(1.619108, -75.603237);
-      var puntok = new L.LatLng(1.619085, -75.603370);
-      var puntol = new L.LatLng(1.619104, -75.603867);
-      var puntom = new L.LatLng(1.619222, -75.604198);
-      var punton = new L.LatLng(1.619438, -75.604403);
-      var puntoñ = new L.LatLng(1.619688, -75.604456);
-      var puntoo = new L.LatLng(1.620034, -75.604420);
-      var universidad = new L.LatLng(1.6200896019413116, -75.60427751183336);
-      var lineaHastaUni = L.polyline([miCasa, puntoa, puntob, puntoc, puntod, puntoe, puntof, puntog, puntoh, puntoi,
-      puntoj, puntok, puntol, puntom, punton, puntoñ, puntoo, universidad], {
+      var universidad = new L.LatLng(1.619776, -75.602457);
+      var lineaHastaUni = L.polyline([miCasa, puntoa, puntob, puntoc, puntod, puntoe, universidad], {
         color: "blue",
         weight: 4,
         opacity: 0.5,
         smoothFactor: 1,
       })
         .addTo(map)
-        .bindPopup("Trayecto universidad")
-        .bindTooltip("Trayecto universidad", { permanent: true })
         .openTooltip();
 
       // Control de capas
