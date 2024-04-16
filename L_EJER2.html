@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Ejercicio Clase No 1</title>
+    <title>Tarea No 1</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -34,7 +34,6 @@
         }
       ).addTo(map);
 
-      // Capas WMS
       var paisesLayer = L.tileLayer
         .wms("http://localhost:8080/geoserver/wms", {
           layers: "paises",
@@ -71,7 +70,7 @@
       );
 
       var universidadMarker = L.marker(
-        [1.6203200402129174, -75.6039551985377],
+        [1.6200896019413116, -75.60427751183336],
         {
           title: "Universidad de la Amazonía",
         }
@@ -116,7 +115,7 @@
         map.flyTo(e.target.getBounds().getCenter(), 17);
       });
 
-      var micasaMarker = L.marker([1.630539, -75.60428], {
+      var micasaMarker = L.marker([1.619679, -75.601159], {
         title: "Mi casa",
       })
         .addTo(map)
@@ -126,9 +125,26 @@
         map.flyTo(e.target.getLatLng(), 17);
       });
 
-      var miCasa = new L.LatLng(1.630539, -75.60428);
-      var universidad = new L.LatLng(1.621030048682005, -75.60427921917797);
-      var lineaHastaUni = L.polyline([miCasa, universidad], {
+      var miCasa = new L.LatLng(1.619679, -75.601159);
+      var puntoa = new L.LatLng(1.619685, -75.601373);
+      var puntob = new L.LatLng(1.619620, -75.601625);
+      var puntoc = new L.LatLng(1.619727, -75.601792);
+      var puntod = new L.LatLng(1.619776, -75.602044);
+      var puntoe = new L.LatLng(1.619776, -75.602296);
+      var puntof = new L.LatLng(1.619776, -75.602457);
+      var puntog = new L.LatLng(1.619921, -75.602714);
+      var puntoh = new L.LatLng(1.619524, -75.602988);
+      var puntoi = new L.LatLng(1.619218, -75.603117);
+      var puntoj = new L.LatLng(1.619108, -75.603237);
+      var puntok = new L.LatLng(1.619085, -75.603370);
+      var puntol = new L.LatLng(1.619104, -75.603867);
+      var puntom = new L.LatLng(1.619222, -75.604198);
+      var punton = new L.LatLng(1.619438, -75.604403);
+      var puntoñ = new L.LatLng(1.619688, -75.604456);
+      var puntoo = new L.LatLng(1.620034, -75.604420);
+      var universidad = new L.LatLng(1.6200896019413116, -75.60427751183336);
+      var lineaHastaUni = L.polyline([miCasa, puntoa, puntob, puntoc, puntod, puntoe, puntof, puntog, puntoh, puntoi,
+      puntoj, puntok, puntol, puntom, punton, puntoñ, puntoo, universidad], {
         color: "blue",
         weight: 4,
         opacity: 0.5,
