@@ -34,41 +34,6 @@
         }
       ).addTo(map);
 
-      var paisesLayer = L.tileLayer
-        .wms("http://localhost:8080/geoserver/wms", {
-          layers: "paises",
-          format: "image/png",
-          transparent: true,
-        })
-        .addTo(map);
-
-      var hidrografiaLayer = L.tileLayer.wms(
-        "http://localhost:8080/geoserver/wms",
-        {
-          layers: "Hidrografia_Mundo",
-          format: "image/png",
-          transparent: true,
-        }
-      );
-
-      var ciudadesLayer = L.tileLayer.wms(
-        "http://localhost:8080/geoserver/wms",
-        {
-          layers: "Ciudades_Mundo",
-          format: "image/png",
-          transparent: true,
-        }
-      );
-
-      var departamentosLayer = L.tileLayer.wms(
-        "http://localhost:8080/geoserver/wms",
-        {
-          layers: "departamento",
-          format: "image/png",
-          transparent: true,
-        }
-      );
-
       var universidadMarker = L.marker(
         [1.6200896019413116, -75.60427751183336],
         {
