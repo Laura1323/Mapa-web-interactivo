@@ -160,14 +160,7 @@
         OpenStreetMap: osmLayer,
       };
 
-      var overlayMaps = {
-        Paises: paisesLayer,
-        Departamentos: departamentosLayer,
-        Hidrografía: hidrografiaLayer,
-        Ciudades: ciudadesLayer,
-      };
-
-      L.control.layers(baseMaps, overlayMaps).addTo(map);
+      L.control.layers(baseMaps).addTo(map);
       L.control.scale().addTo(map);
     </script>
   </body>
